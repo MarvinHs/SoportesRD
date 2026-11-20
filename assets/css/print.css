@@ -1,0 +1,36 @@
+/* Documentos imprimibles (cotizaciones y reportes) */
+body { font-family: 'Segoe UI', Arial, sans-serif; color: #1f2a3c; background: #eef2f7; margin: 0; font-size: 14px; }
+.toolbar { text-align: center; padding: 14px; background: #0B1F3A; }
+.toolbar button, .toolbar a { background: #1677FF; color: #fff; border: 0; padding: 10px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 14px; text-decoration: none; margin: 0 4px; }
+.doc { background: #fff; max-width: 820px; margin: 24px auto; padding: 44px; box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+.doc-head { display: flex; justify-content: space-between; border-bottom: 4px solid #1677FF; padding-bottom: 18px; margin-bottom: 24px; }
+.doc-brand { display: flex; gap: 12px; align-items: center; }
+.doc-brand b { font-size: 24px; color: #0B1F3A; display: block; }
+.doc-brand b span { color: #1677FF; }
+.doc-brand small { color: #64748b; }
+.doc-meta { text-align: right; }
+.doc-meta h1 { margin: 0 0 6px; color: #0B1F3A; font-size: 22px; letter-spacing: .08em; }
+.doc-meta p { margin: 2px 0; }
+.doc-parties { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 20px; }
+.doc-parties h3 { font-size: 12px; text-transform: uppercase; color: #1677FF; margin: 0 0 6px; letter-spacing: .06em; }
+.doc-parties p { margin: 0; line-height: 1.6; }
+.doc-detail { background: #F4F7FB; padding: 12px 16px; border-radius: 8px; }
+.doc-table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+.doc-table th { background: #0B1F3A; color: #fff; text-align: left; padding: 10px; font-size: 12px; text-transform: uppercase; }
+.doc-table td { padding: 9px 10px; border-bottom: 1px solid #e2e8f0; }
+.doc-table tfoot td { border: 0; padding: 6px 10px; }
+.doc-table tr.total td { font-size: 17px; font-weight: 800; color: #0B1F3A; border-top: 2px solid #0B1F3A; }
+.doc-table tbody tr:nth-child(even) td { background: #F4F7FB; }
+.r { text-align: right; }
+.doc-foot { margin-top: 40px; text-align: center; color: #64748b; font-size: 12px; border-top: 1px solid #e2e8f0; padding-top: 14px; }
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 14px 0 20px; }
+.kpis div { background: #F4F7FB; border-radius: 8px; padding: 12px; text-align: center; }
+.kpis b { display: block; font-size: 22px; color: #1677FF; }
+h2.sec { font-size: 15px; color: #0B1F3A; border-left: 4px solid #16A34A; padding-left: 8px; margin: 24px 0 8px; }
+@media print {
+    body { background: #fff; }
+    .no-print { display: none !important; }
+    .doc { box-shadow: none; margin: 0; max-width: none; padding: 0; }
+    .doc-table th { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .doc-table tbody tr:nth-child(even) td, .kpis div, .doc-detail { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}

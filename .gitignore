@@ -1,0 +1,8 @@
+storage/*.sqlite
+storage/*.log
+uploads/*
+!uploads/.htaccess
+!uploads/.gitkeep
+.DS_Store
+Thumbs.db
+.env
