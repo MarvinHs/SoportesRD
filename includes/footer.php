@@ -2,10 +2,7 @@
 <footer class="site-footer">
     <div class="container footer-grid">
         <div>
-            <a href="<?= url('index.php') ?>" class="brand brand-light">
-                <img src="<?= url('assets/img/logo.svg') ?>" alt="" width="38" height="38">
-                <span>Soportes<b>RD</b></span>
-            </a>
+            <a href="<?= url('index.php') ?>" class="brand-wordmark"><img src="<?= url('assets/img/logo-wordmark.svg') ?>" alt="SoportesRD" width="230" height="60"></a>
             <p class="muted-light"><?= e(setting('eslogan')) ?></p>
             <div class="socials">
                 <?php foreach (['facebook', 'instagram', 'linkedin', 'tiktok'] as $s): if (setting($s)): ?>

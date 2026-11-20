@@ -20,9 +20,10 @@ $nav = [
     <title><?= e($pageTitle) ?> | <?= e(setting('nombre_comercial', 'SoportesRD')) ?></title>
     <meta name="description" content="<?= e(setting('eslogan')) ?> Soporte técnico, redes, seguridad informática y asistencia remota en República Dominicana.">
     <meta name="theme-color" content="#0B1F3A">
+    <link rel="apple-touch-icon" href="<?= url('assets/img/logo.svg') ?>">
     <link rel="icon" href="<?= url('assets/img/favicon.svg') ?>" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?= url('assets/css/style.css') ?>">
 </head>
 <body>
@@ -30,7 +31,7 @@ $nav = [
     <div class="container nav-wrap">
         <a href="<?= url('index.php') ?>" class="brand" aria-label="SoportesRD inicio">
             <img src="<?= url('assets/img/logo.svg') ?>" alt="Logo de SoportesRD" width="42" height="42">
-            <span>Soportes<b>RD</b></span>
+            <span class="brand-name">SoportesRD</span>
         </a>
         <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" data-nav-toggle><?= icon('menu') ?></button>
         <nav class="main-nav" data-nav>

@@ -34,3 +34,4 @@ h2.sec { font-size: 15px; color: #0B1F3A; border-left: 4px solid #16A34A; paddin
     .doc-table th { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     .doc-table tbody tr:nth-child(even) td, .kpis div, .doc-detail { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+.doc-brand b.doc-name { font-style: italic; font-weight: 900; }

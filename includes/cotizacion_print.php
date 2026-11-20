@@ -11,7 +11,7 @@ $tk = $c['ticket_id'] ? q_one('SELECT codigo FROM tickets WHERE id = ?', [$c['ti
 <div class="toolbar no-print"><button onclick="window.print()">Imprimir / Guardar PDF</button></div>
 <div class="doc">
     <header class="doc-head">
-        <div class="doc-brand"><img src="<?= url('assets/img/logo.svg') ?>" alt="" width="54"><div><b>Soportes<span>RD</span></b><small><?= e(setting('eslogan')) ?></small></div></div>
+        <div class="doc-brand"><img src="<?= url('assets/img/logo.svg') ?>" alt="" width="54"><div><b class="doc-name">SoportesRD</b><small><?= e(setting('eslogan')) ?></small></div></div>
         <div class="doc-meta"><h1>COTIZACIÓN</h1><p><b><?= e($c['numero']) ?></b></p><p>Fecha: <?= fecha($c['creado'], false) ?></p><p>Válida por <?= (int)$c['validez_dias'] ?> días</p><?php if ($tk): ?><p>Ticket: <?= e($tk['codigo']) ?></p><?php endif; ?></div>
     </header>
     <section class="doc-parties">

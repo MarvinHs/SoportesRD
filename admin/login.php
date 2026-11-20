@@ -24,14 +24,14 @@ if (is_post()) {
 <html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Acceso al panel | SoportesRD</title>
 <link rel="icon" href="<?= url('assets/img/favicon.svg') ?>" type="image/svg+xml">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="<?= url('assets/css/style.css') ?>"><link rel="stylesheet" href="<?= url('assets/css/admin.css') ?>">
 </head><body class="login-page">
 <div class="login-split">
     <div class="login-art">
-        <a href="<?= url('index.php') ?>" class="brand brand-light"><img src="<?= url('assets/img/logo.svg') ?>" alt="" width="44"><span>Soportes<b>RD</b></span></a>
+        <a href="<?= url('index.php') ?>" class="brand-wordmark"><img src="<?= url('assets/img/logo-wordmark.svg') ?>" alt="SoportesRD" width="240" height="63"></a>
         <div><h2>Panel administrativo</h2><p>Gestiona tickets, clientes, técnicos, cotizaciones y reportes desde un solo lugar.</p></div>
-        <img src="<?= url('assets/img/hero.svg') ?>" alt="">
+        <img src="<?= url('assets/img/logo-card.svg') ?>" alt="Logo SoportesRD" class="login-logo">
     </div>
     <div class="login-form">
         <form method="post" class="form">

@@ -19,7 +19,7 @@ require __DIR__ . '/includes/header.php';
             <p class="lead">En SoportesRD nos dedicamos a ofrecer soluciones tecnológicas y servicios de soporte informático, comprometidos con brindar asistencia eficiente, atención personalizada y soluciones confiables para nuestros clientes.</p>
             <p>Atendemos hogares, profesionales independientes, pequeñas y medianas empresas, instituciones educativas y comercios. Cada solicitud se registra con un número de ticket, se asigna a un técnico especializado y se le da seguimiento hasta su solución.</p>
         </div>
-        <div class="about-art"><img src="<?= url('assets/img/hero.svg') ?>" alt="Ilustración de equipos tecnológicos" loading="lazy"></div>
+        <div class="about-art"><img src="<?= url('assets/img/logo-card.svg') ?>" alt="Logo de SoportesRD" class="about-logo" loading="lazy"></div>
     </div>
 </section>
 

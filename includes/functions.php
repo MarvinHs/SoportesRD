@@ -122,7 +122,7 @@ function send_mail(string $to, string $subject, string $body): bool
 {
     $from = config('mail')['from'];
     $html = '<div style="font-family:Arial,sans-serif;max-width:600px;margin:auto;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">'
-        . '<div style="background:#0B1F3A;color:#fff;padding:16px 20px;font-size:20px;font-weight:bold">Soportes<span style="color:#1677FF">RD</span></div>'
+        . '<div style="background:#05101f;color:#fff;padding:16px 20px;font-size:22px;font-weight:900;font-style:italic;border-bottom:3px solid #1E9BFF">SoportesRD</div>'
         . '<div style="padding:20px;color:#1f2937;line-height:1.6">' . $body . '</div>'
         . '<div style="background:#F4F7FB;padding:12px 20px;font-size:12px;color:#6b7280">' . e(setting('telefono')) . ' · ' . e(setting('email')) . '</div></div>';
 

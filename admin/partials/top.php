@@ -23,13 +23,13 @@ $nuevos = (int)q_val("SELECT COUNT(*) FROM tickets WHERE estado = 'Recibido'");
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= e($pageTitle ?? 'Panel') ?> | Panel SoportesRD</title>
     <link rel="icon" href="<?= url('assets/img/favicon.svg') ?>" type="image/svg+xml">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?= url('assets/css/style.css') ?>">
     <link rel="stylesheet" href="<?= url('assets/css/admin.css') ?>">
 </head>
 <body class="admin">
 <aside class="sidebar">
-    <a href="<?= url('admin/index.php') ?>" class="brand brand-light"><img src="<?= url('assets/img/logo.svg') ?>" alt="" width="36" height="36"><span>Soportes<b>RD</b></span></a>
+    <a href="<?= url('admin/index.php') ?>" class="brand-wordmark side-logo"><img src="<?= url('assets/img/logo-wordmark.svg') ?>" alt="SoportesRD" width="200" height="52"></a>
     <nav class="side-nav">
         <?php foreach ($menu as [$href, $key, $label, $ic, $adminOnly]): if ($adminOnly && $me['rol'] !== 'admin') continue; ?>
             <a href="<?= url('admin/' . $href) ?>" class="<?= ($section ?? '') === $key ? 'active' : '' ?>">

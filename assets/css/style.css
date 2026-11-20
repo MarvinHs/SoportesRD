@@ -297,3 +297,10 @@ details.card[open] summary { margin-bottom: 1rem; }
     .progress-steps li:nth-child(4)::before { display: none; }
     .hero-actions .btn { flex: 1; }
 }
+
+/* ---------- Identidad: logo de SoportesRD ---------- */
+.brand-name { font-weight: 900; font-style: italic; letter-spacing: -.02em; color: var(--navy); }
+.brand-wordmark { display: inline-block; }
+.brand-wordmark:hover { text-decoration: none; opacity: .92; }
+.brand-wordmark img { height: auto; }
+.about-logo { border-radius: 24px; box-shadow: var(--shadow-lg); max-width: 420px; margin: 0 auto; }

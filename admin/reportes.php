@@ -58,7 +58,7 @@ if (get('pdf')): ?><!DOCTYPE html>
 <html lang="es"><head><meta charset="UTF-8"><title>Reporte <?= e($desde) ?> a <?= e($hasta) ?> - SoportesRD</title><link rel="stylesheet" href="<?= url('assets/css/print.css') ?>"><link rel="stylesheet" href="<?= url('assets/css/admin.css') ?>"></head>
 <body class="print-report"><div class="toolbar no-print"><button onclick="window.print()">Imprimir / Guardar PDF</button> <a href="?desde=<?= e($desde) ?>&hasta=<?= e($hasta) ?>">Volver</a></div>
 <div class="doc">
-    <header class="doc-head"><div class="doc-brand"><img src="<?= url('assets/img/logo.svg') ?>" width="54" alt=""><div><b>Soportes<span>RD</span></b><small>Reporte de operaciones</small></div></div>
+    <header class="doc-head"><div class="doc-brand"><img src="<?= url('assets/img/logo.svg') ?>" width="54" alt=""><div><b class="doc-name">SoportesRD</b><small>Reporte de operaciones</small></div></div>
         <div class="doc-meta"><h1>REPORTE</h1><p>Del <?= fecha($desde, false) ?> al <?= fecha($hasta, false) ?></p><p>Generado: <?= fecha(now()) ?></p></div></header>
     <div class="kpis"><div><b><?= $total ?></b>Tickets</div><div><b><?= $resueltos ?></b>Resueltos</div><div><b><?= $total ? round($resueltos * 100 / $total) : 0 ?>%</b>Tasa de solución</div><div><b><?= $fmtH($promedio) ?></b>Tiempo promedio</div></div>
     <h2 class="sec">Solicitudes por mes</h2><?= chart_bars($mesLabels, array_values($porMes)) ?>
